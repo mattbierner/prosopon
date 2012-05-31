@@ -4,7 +4,7 @@
 
 
 // Based on lua_alloc 
-void* simple_alloc(void* ptr, size_t nsize)
+void* simple_alloc(void* ptr, size_t nsize, void* ud)
 {
     if (0 == nsize)
     {

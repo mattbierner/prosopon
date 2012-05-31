@@ -14,6 +14,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		89247AAC155C72C8003DDD73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89247AA2155C72C8003DDD73 /* libstd.proi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 89A7018815521103007EAA2C;
+			remoteInfo = std.proi;
+		};
+		89247AAE155C72E0003DDD73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89247AA2155C72C8003DDD73 /* libstd.proi.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 89A7018715521103007EAA2C;
+			remoteInfo = std.proi;
+		};
 		8944F765154782E50054A366 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8944F75C154782E40054A366 /* prosopon-core.xcodeproj */;
@@ -71,6 +85,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		89247AA2155C72C8003DDD73 /* libstd.proi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libstd.proi.xcodeproj; path = ../libstd.proi/libstd.proi.xcodeproj; sourceTree = "<group>"; };
 		8944F709154782440054A366 /* prosopon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = prosopon; sourceTree = BUILT_PRODUCTS_DIR; };
 		8944F741154782740054A366 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		8944F759154782BD0054A366 /* pro_alloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pro_alloc.c; sourceTree = "<group>"; };
@@ -92,9 +107,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89247AA3155C72C8003DDD73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89247AAD155C72C8003DDD73 /* libstd.proi.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		8944F6FE154782440054A366 = {
 			isa = PBXGroup;
 			children = (
+				89247AA2155C72C8003DDD73 /* libstd.proi.xcodeproj */,
 				8944F76A1547830D0054A366 /* prosopon-interpreter.xcodeproj */,
 				8944F75C154782E40054A366 /* prosopon-core.xcodeproj */,
 				8944F71C154782740054A366 /* src */,
@@ -152,6 +176,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				89247AAF155C72E0003DDD73 /* PBXTargetDependency */,
 				8944F78C154783790054A366 /* PBXTargetDependency */,
 				8944F78E154783790054A366 /* PBXTargetDependency */,
 			);
@@ -180,6 +205,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 89247AA3155C72C8003DDD73 /* Products */;
+					ProjectRef = 89247AA2155C72C8003DDD73 /* libstd.proi.xcodeproj */;
+				},
+				{
 					ProductGroup = 8944F75D154782E40054A366 /* Products */;
 					ProjectRef = 8944F75C154782E40054A366 /* prosopon-core.xcodeproj */;
 				},
@@ -196,6 +225,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		89247AAD155C72C8003DDD73 /* libstd.proi.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libstd.proi.dylib;
+			remoteRef = 89247AAC155C72C8003DDD73 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		8944F766154782E50054A366 /* libprosopon-core.dylib */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.dylib";
@@ -241,6 +277,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		89247AAF155C72E0003DDD73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = std.proi;
+			targetProxy = 89247AAE155C72E0003DDD73 /* PBXContainerItemProxy */;
+		};
 		8944F78C154783790054A366 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "prosopon-interpreter";

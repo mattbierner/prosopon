@@ -4,7 +4,7 @@
 #include <stddef.h>
 
 
-void* simple_alloc(void* ptr, size_t nsize);
+void* simple_alloc(void* ptr, size_t nsize, void* ud);
 
 
 #endif

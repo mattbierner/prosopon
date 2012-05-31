@@ -3,13 +3,38 @@
 *~
 *.tmp*
 *.orig
+*.cache
+*.log
+
+# Autotools #
+#############
+*.in
+.deps
+config.guess
+config.h
+config.h.in
+configure
+config.sub
+config.status
+depcomp
+install-sh
+libtool
+ltmain.sh
+missing
+stamp-h1
+Makefile
 
 # Build #
 #########
 bin
 build
-prosopon
-prosopon.dSYM
+libprosopon*
+.libs
+
+# Doc Files #
+#############
+doc
+gh-pages
 
 # Project Files #
 #################

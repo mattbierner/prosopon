@@ -1,0 +1,12 @@
+[submodule "prosopon-core"]
+	path = prosopon-core
+	url = ./prosopon-core
+[submodule "libstd.pro"]
+	path = libstd.pro
+	url = ./libstd.pro
+[submodule "libstd.proi"]
+	path = libstd.proi
+	url = ./libstd.proi/
+[submodule "prosopon-interpreter"]
+	path = prosopon-interpreter
+	url = ./prosopon-interpreter/
